@@ -15,3 +15,18 @@ struct termios {
      cc_t	c_cc[NCCS];	/* Control characters */
 };
 ```
+#### `c_iflag`
+* `IGNBRK` ignore BREAK condition
+* `BRKINT` map BREAK to SIGINTR
+* `IGNPAR` ignore (discard) parity errors
+* `PARMRK` mark parity and framing errors
+* `INPCK` enable checking of parity errors
+* `ISTRIP` strip 8th bit off chars
+* `INLCR` map NL into CR
+* `IGNCR` ignore CR
+* `ICRNL` map CR to NL (ala CRMOD)
+* `IXON` enable output flow control
+* `IXOFF` enable input flow control
+* `IXANY` any char will restart after stop
+* `IMAXBEL` ring bell on input queue full
+* `IUCLC` translate upper case to lower case
