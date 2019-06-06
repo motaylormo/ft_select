@@ -8,10 +8,10 @@ This is my version of the **[42](https://www.42.us.org/)** cadet project `ft_sel
 * `tcsetattr()` to set parameters in the termios structure to the terminal _fd_
 ```c
 struct termios {
-  tcflag_t  c_iflag;    /* Input modes */
-  tcflag_t  c_oflag;    /* Output modes */
-  tcflag_t  c_cflag;    /* Control modes */
-  tcflag_t  c_lflag;    /* Local modes */
-  cc_t      c_cc[NCCS]; /* Control characters */
+	tcflag_t	c_iflag;	/* Input modes */
+	tcflag_t	c_oflag;	/* Output modes */
+	tcflag_t	c_cflag;	/* Control modes */
+	tcflag_t	c_lflag;	/* Local modes */
+	cc_t		c_cc[NCCS];	/* Control characters */
 };
 ```
