@@ -15,7 +15,10 @@ struct termios {
      cc_t	c_cc[NCCS];	/* Control characters */
 };
 ```
-#### `c_iflag`
+<details>
+<summary>Modes</summary>
+
+#### Input Modes (`c_iflag`)
 * `IGNBRK` ignore BREAK condition
 * `BRKINT` map BREAK to SIGINTR
 * `IGNPAR` ignore (discard) parity errors
@@ -30,3 +33,14 @@ struct termios {
 * `IXANY` any char will restart after stop
 * `IMAXBEL` ring bell on input queue full
 * `IUCLC` translate upper case to lower case
+
+####  Output Modes (`c_oflag`)
+* `OPOST` enable following output processing
+* `ONLCR` map NL to CR-NL (ala CRMOD)
+* `OXTABS` expand tabs to spaces
+* `ONOEOT` discard EOT's `^D' on output)
+* `OCRNL` map CR to NL
+* `OLCUC` translate lower case to upper case
+* `ONOCR` No CR output at column 0
+* `ONLRET` NL performs CR function
+</details>
