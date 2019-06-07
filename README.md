@@ -18,6 +18,7 @@ struct termios {
 <details>
      <summary><h3>Control characters</h3></summary>
 Index into `c_cc[]` character array.
+
 | subscript | macro | meaning
 | -: | ---------- | ------------------
 | 0  | `VEOF`     | end-of-file (EOF) character
