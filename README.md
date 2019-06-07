@@ -16,22 +16,24 @@ struct termios {
 };
 ```
 <details>
-<summary>Control characters</summary>
+     <summary><h3>Control characters</h3></summary>
 
-* `VEOF`
-* `VEOL`
-* `VEOL2`
-* `VERASE`
-* `VWERASE`
-* `VKILL`
-* `VREPRINT`
-* `VINTR`
-* `VQUIT`
-* `VSUSP`
-* `VSTART`
-* `VSTOP`
-* `VLNEXT`
-* `VDISCARD`
-* `VMIN`
-* `VTIME`
+0. `VEOF` end-of-file (EOF) character
+1. `VEOL` additional end-of-line (EOL) character
+2. `VEOL2` yet another end-of-line character
+3. `VERASE` erases the previous not-yet-erased character, but does not erase past EOF or beginning-of-line
+4. `VWERASE` word erase
+5. `VKILL` kill character; erases the input since the last EOF or beginning-of-line
+6. `VREPRINT` reprint unread characters
+7. ?
+8. `VINTR` interrupt character; send SIGINT signal
+9. `VQUIT` quit character; send SIGQUIT signal
+10. `VSUSP` suspend character; send SIGTSTP signal
+11. ?
+12. `VSTART` start character: restarts output stopped by the _stop_ character
+13. `VSTOP` stop character: stop output until _start_ character typed
+14. `VLNEXT` literal next: quotes the next input character, depriving it of a possible special meaning
+15. `VDISCARD` toggle: start/stop discarding pending output
+16. `VMIN` minimum number of characters for noncanonical read
+17. `VTIME` timeout in deciseconds for noncanonical read
 </details>
