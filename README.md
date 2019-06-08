@@ -8,11 +8,13 @@ This is my version of the **[42](https://www.42.us.org/)** cadet project `ft_sel
 * `tcsetattr()` to set parameters in the termios structure to the terminal _fd_
 ```c
 struct termios {
-     tcflag_t	c_iflag;	/* Input modes */
-     tcflag_t	c_oflag;	/* Output modes */
-     tcflag_t	c_cflag;	/* Control modes */
-     tcflag_t	c_lflag;	/* Local modes */
-     cc_t	c_cc[NCCS];	/* Control characters */
+	tcflag_t	c_iflag;	/* input flags */
+	tcflag_t	c_oflag;	/* output flags */
+	tcflag_t	c_cflag;	/* control flags */
+	tcflag_t	c_lflag;	/* local flags */
+	cc_t		c_cc[NCCS];	/* control chars */
+	long		c_ispeed;	/* input speed */
+	long		c_ospeed;	/* output speed */
 };
 ```
 
@@ -20,8 +22,7 @@ http://man7.org/linux/man-pages/man3/termios.3.html
 
 https://unix.superglobalmegacorp.com/BSD4.4/newsrc/sys/termios.h.html
 
-<details>
-     <summary><h3>Control characters</h3></summary>
+<details><summary><h3>Control characters</h3></summary>
      
 Index into `c_cc[]` character array.
 
