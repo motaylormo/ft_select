@@ -28,6 +28,14 @@ struct termios {
 <details><summary><b>Control flags</b></summary>
 </details>
 <details><summary><b>Local flags</b></summary>
+
+* `ECHOKE` visual erase for line kill
+* `ECHOE` visually erase chars
+* `ECHOK` echo NL after line kill
+* `ECHO` enable echoing
+* `ECHONL` echo NL even if ECHO is off
+* `ECHOPRT` visual erase mode for hardcopy
+* `ECHOCTL` echo control chars as ^(Char)
 </details>
 <details><summary><b>Control characters</b></summary>
 
