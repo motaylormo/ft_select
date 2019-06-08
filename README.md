@@ -22,11 +22,11 @@ http://man7.org/linux/man-pages/man3/termios.3.html
 
 https://unix.superglobalmegacorp.com/BSD4.4/newsrc/sys/termios.h.html
 
-<details><summary><h4>Input flags</h4></summary></details>
-<details><summary><h4>Output flags</h4></summary></details>
-<details><summary><h4>Control flags</h4></summary></details>
-<details><summary><h4>Local flags</h4></summary></details>
-<details><summary><h4>Control characters</h4></summary>
+<details><summary><b>Input flags</b></summary></details>
+<details><summary><b>Output flags</b></summary></details>
+<details><summary><b>Control flags</b></summary></details>
+<details><summary><b>Local flags</b></summary></details>
+<details><summary><b>Control characters</b></summary>
      
 Index into `c_cc[]` character array.
 
