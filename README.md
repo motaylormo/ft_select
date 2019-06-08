@@ -3,6 +3,12 @@ This is my version of the **[42](https://www.42.us.org/)** cadet project `ft_sel
 # ft_select
 
 ## Functions used
+* `getenv()` obtains the current value of the environment variable given as a parameter
+
+### TTY (Terminal Type)
+* `isatty()` 1 or 0 depending on if the _fd_ refers to a valid terminal type device
+* `ttyname()` gets the related device name of the _fd_
+* `ttyslot()`???
 
 ### Termcaps
 * `tgetent()` sets up termcaps to work
