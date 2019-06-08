@@ -38,7 +38,7 @@ struct termios {
 </details>
 <details><summary><b>Control characters</b></summary>
 
-Index into `c_cc[]` character array. [https://unix.superglobalmegacorp.com/BSD4.4/newsrc/sys/termios.h.html](Source)
+Index into `c_cc[]` character array. [Source](https://unix.superglobalmegacorp.com/BSD4.4/newsrc/sys/termios.h.html)
 
 |    | macro | enabled by | meaning
 | -: | ----- | ---------- | -------
