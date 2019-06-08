@@ -18,16 +18,14 @@ struct termios {
 };
 ```
 
-http://man7.org/linux/man-pages/man3/termios.3.html
-
-https://unix.superglobalmegacorp.com/BSD4.4/newsrc/sys/termios.h.html
-
+* http://man7.org/linux/man-pages/man3/termios.3.html
+* https://unix.superglobalmegacorp.com/BSD4.4/newsrc/sys/termios.h.html
+* https://en.wikibooks.org/wiki/Serial_Programming/termios
 <details><summary><b>Input flags</b></summary></details>
 <details><summary><b>Output flags</b></summary></details>
 <details><summary><b>Control flags</b></summary></details>
 <details><summary><b>Local flags</b></summary></details>
 <details><summary><b>Control characters</b></summary>
-     
 Index into `c_cc[]` character array.
 
 |    | macro | enabled by | meaning
