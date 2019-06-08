@@ -3,6 +3,21 @@ This is my version of the **[42](https://www.42.us.org/)** cadet project `ft_sel
 # ft_select
 
 ## Functions used
+
+### Termcaps
+* `tgetent()` sets up termcaps to work
+* `tgetnum()` get the number of lines (`"li"`) or columns (`"co"`) in the terminal window
+* `tgetstr()` returns the string entry for _id_
+	* `"dm"` enter delete mode
+	* `"dl"` delete line
+	* `"ed"` exit delete mode
+	* `"im"` enter insert mode
+	* `"al"` insert line
+	* `"ei"` exit insert mode
+* `tgoto()` moves the curser
+	* `"ll"` last line, first column
+	* `"up"` up one line
+
 ### Termios
 * `tcgetattr()` to get the parameters associated with the terminal _fd_ and store them in the termios structure
 * `tcsetattr()` to set parameters in the termios structure to the terminal _fd_
