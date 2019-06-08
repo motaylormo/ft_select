@@ -18,10 +18,8 @@ struct termios {
 <details>
      <summary><h3>Control characters</h3></summary>
      
-Index into `c_cc[]` character array.
-
-|    | macro      | enabled by | meaning
-| -: | ---------- | ------------------
+|    | macro | enabled by | meaning
+| -: | ----- | ---------- | -------
 | 0  | `VEOF`     | `ICANON` | end-of-file (EOF) character
 | 1  | `VEOL`     | `ICANON` | additional end-of-line (EOL) character
 | 2  | `VEOL2`    | `ICANON` | yet another end-of-line character
@@ -29,7 +27,7 @@ Index into `c_cc[]` character array.
 | 4  | `VWERASE`  | `ICANON` | word erase
 | 5  | `VKILL`    | `ICANON` | kill character: erases the input since the last EOF or beginning-of-line.
 | 6  | `VREPRINT` | `ICANON` | reprint unread characters
-| 7  | | _spare 1_
+| 7  | | | _spare 1_
 | 8  | `VINTR`    | `ISIG` | interrupt character: send SIGINT signal.
 | 9  | `VQUIT`    | `ISIG` | quit character: send SIGQUIT signal.
 | 10 | `VSUSP`    | `ISIG` | suspend character: send SIGTSTP signal.
@@ -41,6 +39,6 @@ Index into `c_cc[]` character array.
 | 16 | `VMIN`     | `~ICANON` | minimum number of characters for noncanonical read
 | 17 | `VTIME`    | `~ICANON` | timeout in deciseconds for noncanonical read
 | 18 | `VSTATUS`  | `ICANON`  | status character: display status information at terminal. Also sends a SIGINFO signa to the foreground process group.
-| 19 | | _spare 2_
+| 19 | | | _spare 2_
 
 </details>
