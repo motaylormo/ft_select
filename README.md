@@ -15,6 +15,11 @@ struct termios {
      cc_t	c_cc[NCCS];	/* Control characters */
 };
 ```
+
+http://man7.org/linux/man-pages/man3/termios.3.html
+
+https://unix.superglobalmegacorp.com/BSD4.4/newsrc/sys/termios.h.html
+
 <details>
      <summary><h3>Control characters</h3></summary>
      
