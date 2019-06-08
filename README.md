@@ -55,5 +55,4 @@ Index into `c_cc[]` character array.
 | 17 | `VTIME`    | `~ICANON` | timeout in deciseconds for noncanonical read
 | 18 | `VSTATUS`  | `ICANON`  | status character: display status information at terminal. Also sends a SIGINFO signa to the foreground process group.
 | 19 | | | _spare 2_
-
 </details>
