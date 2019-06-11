@@ -30,6 +30,9 @@ struct termios {
 	long		c_ospeed;	/* output speed */
 };
 ```
+* `ioctl()` http://man7.org/linux/man-pages/man2/ioctl_tty.2.html
+	* `TIOCGWINSZ` get window size
+	* `TIOCSWINSZ` set window size
 
 * http://man7.org/linux/man-pages/man3/termios.3.html
 * https://en.wikibooks.org/wiki/Serial_Programming/termios
