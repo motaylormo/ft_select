@@ -7,6 +7,8 @@ This is my version of the **[42](https://www.42.us.org/)** cadet project `ft_sel
 ### Terminal
 * `tcgetattr()` to get the parameters associated with the terminal _fd_ and store them in the termios structure
 * `tcsetattr()` to set parameters in the termios structure to the terminal _fd_
+<details><summary><b>Struct termios</b></summary>
+
 ```c
 struct termios {
 	tcflag_t	c_iflag;	/* input flags */
@@ -18,11 +20,6 @@ struct termios {
 	long		c_ospeed;	/* output speed */
 };
 ```
-<details><summary><b>Input flags</b></summary>
-</details>
-<details><summary><b>Output flags</b></summary>
-</details>
-<details><summary><b>Control flags</b></summary>
 </details>
 <details><summary><b>Local flags</b></summary>
 
@@ -61,6 +58,7 @@ Index into `c_cc[]` character array. [(Source)](https://unix.superglobalmegacorp
 | 18 | `VSTATUS`  | `ICANON`  | status character: display status information at terminal. Also sends a SIGINFO signa to the foreground process group.
 | 19 | | | _spare 2_
 </details>
+
 * `ioctl()` http://man7.org/linux/man-pages/man2/ioctl_tty.2.html
 	* `TIOCGWINSZ` get window size
 	* `TIOCSWINSZ` set window size
