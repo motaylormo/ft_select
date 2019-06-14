@@ -5,11 +5,6 @@ This is my version of the **[42](https://www.42.us.org/)** cadet project `ft_sel
 * `getenv()` obtains the current value of the environment variable given as a parameter
 
 ### Terminal
-* `isatty()` 1 or 0 depending on if the _fd_ refers to a valid terminal type device
-* `ttyname()` gets the related device name of the _fd_
-* `ttyslot()` http://man7.org/linux/man-pages/man3/ttyslot.3.html
-
-#### Termios
 * `tcgetattr()` to get the parameters associated with the terminal _fd_ and store them in the termios structure
 * `tcsetattr()` to set parameters in the termios structure to the terminal _fd_
 ```c
@@ -23,12 +18,6 @@ struct termios {
 	long		c_ospeed;	/* output speed */
 };
 ```
-* `ioctl()` http://man7.org/linux/man-pages/man2/ioctl_tty.2.html
-	* `TIOCGWINSZ` get window size
-	* `TIOCSWINSZ` set window size
-
-* http://man7.org/linux/man-pages/man3/termios.3.html
-* https://en.wikibooks.org/wiki/Serial_Programming/termios
 <details><summary><b>Input flags</b></summary>
 </details>
 <details><summary><b>Output flags</b></summary>
@@ -72,6 +61,15 @@ Index into `c_cc[]` character array. [(Source)](https://unix.superglobalmegacorp
 | 18 | `VSTATUS`  | `ICANON`  | status character: display status information at terminal. Also sends a SIGINFO signa to the foreground process group.
 | 19 | | | _spare 2_
 </details>
+* `ioctl()` http://man7.org/linux/man-pages/man2/ioctl_tty.2.html
+	* `TIOCGWINSZ` get window size
+	* `TIOCSWINSZ` set window size
+* `isatty()` 1 or 0 depending on if the _fd_ refers to a valid terminal type device
+* `ttyname()` gets the related device name of the _fd_
+* `ttyslot()` http://man7.org/linux/man-pages/man3/ttyslot.3.html
+
+* http://man7.org/linux/man-pages/man3/termios.3.html
+* https://en.wikibooks.org/wiki/Serial_Programming/termios
 
 ### Termcaps
 * `tgetent()` sets up termcaps to work
