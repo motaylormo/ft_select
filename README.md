@@ -1,22 +1,15 @@
-This is my version of the **[42](https://www.42.us.org/)** cadet project `ft_select` from the UNIX branch.
-
 # ft_select
+This is my version of the **[42](https://www.42.us.org/)** cadet project `ft_select` from the UNIX branch.
 
 ## Functions used
 * `getenv()` obtains the current value of the environment variable given as a parameter
 
-### TTY (Terminal Type)
+### Terminal
 * `isatty()` 1 or 0 depending on if the _fd_ refers to a valid terminal type device
 * `ttyname()` gets the related device name of the _fd_
 * `ttyslot()` http://man7.org/linux/man-pages/man3/ttyslot.3.html
 
-### Termcaps
-* `tgetent()` sets up termcaps to work
-* `tgetnum()` get the number of lines (`"li"`) or columns (`"co"`) in the terminal window
-* `tgetstr()` returns the string entry for _id_
-* `tgoto()` moves the curser
-
-### Termios
+#### Termios
 * `tcgetattr()` to get the parameters associated with the terminal _fd_ and store them in the termios structure
 * `tcsetattr()` to set parameters in the termios structure to the terminal _fd_
 ```c
@@ -79,3 +72,9 @@ Index into `c_cc[]` character array. [(Source)](https://unix.superglobalmegacorp
 | 18 | `VSTATUS`  | `ICANON`  | status character: display status information at terminal. Also sends a SIGINFO signa to the foreground process group.
 | 19 | | | _spare 2_
 </details>
+
+### Termcaps
+* `tgetent()` sets up termcaps to work
+* `tgetnum()` get the number of lines (`"li"`) or columns (`"co"`) in the terminal window
+* `tgetstr()` returns the string entry for _id_
+* `tgoto()` moves the curser
