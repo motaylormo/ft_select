@@ -64,10 +64,6 @@ Index into `c_cc[]` character array. [(Source)](https://unix.superglobalmegacorp
 	* `TIOCSWINSZ` set window size
 * `isatty()` 1 or 0 depending on if the _fd_ refers to a valid terminal type device
 * `ttyname()` gets the related device name of the _fd_
-* `ttyslot()` http://man7.org/linux/man-pages/man3/ttyslot.3.html
-
-* http://man7.org/linux/man-pages/man3/termios.3.html
-* https://en.wikibooks.org/wiki/Serial_Programming/termios
 
 ### Termcaps
 * `tgetent()` sets up termcaps to work
