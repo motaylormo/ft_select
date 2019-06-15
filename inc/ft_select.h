@@ -45,9 +45,9 @@
 # define SELECTED GRN UNDERLINE
 # define MIN_BETWEEN_COLS 3
 
-# define NAME		"ft_select"
-# define ERROR_MSG	(NAME ": error")
-# define USAGE		("usage: " NAME " choice1 choice2 choice_etc\n")
+# define NAME "ft_select"
+# define ERROR_MSG (NAME ": error")
+# define USAGE ("usage: " NAME " choice1 [choice2] [choice_etc]\n")
 
 typedef struct s_node	t_node;
 struct	s_node
